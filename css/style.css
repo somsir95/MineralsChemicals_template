@@ -1,0 +1,718 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: "Montserrat", sans-serif;
+}
+
+
+.nav-cta {
+    background-color: #336e9d;
+    padding: 5px 15px;
+    font-family: "Roboto", serif;
+}
+
+.nav-cta-main {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.dropdown-menu {
+    position: absolute;
+    z-index: 1000;
+    display: none;
+    min-width: 20rem;
+    padding: 0.5rem 0;
+    margin: 0;
+    font-size: 1rem;
+    color: #212529;
+    text-align: left;
+    list-style: none;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid rgba(0,0,0,.15);
+    border-radius: .25rem;
+    border-bottom: 0px solid #000;
+}
+
+.ico-mob {
+    color: #fff;
+    font-size: 14px;
+    padding-right: 10px;
+}
+
+.ico-mail {
+    padding-left: 18px;
+    color: #fff;
+    padding-right: 8px;
+    font-size: 14px;
+}
+
+.nav-cta-left a {
+    color: #fff;
+    font-size: 15px;
+    text-decoration: none;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+}
+
+.ico-face, .ico-link, .ico-what {
+    font-size: 18px;
+    font-weight: 500;
+    color: #fff;
+    padding: 0 8px;
+}
+
+.mid-nav {
+    background-color: #ffffff;
+}
+
+.amc-logo-text {
+    font-size: 34px;
+    font-weight: 700;
+    color: #336e9d;
+    letter-spacing: 0.5px;
+    font-family: "Lexend Deca", sans-serif;
+}
+
+.mid-main-nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+img.iec-img {
+    width: 120px;
+}
+
+img.msme-img {
+    width: 100px;
+}
+
+
+.amc-navigation{
+    background-color: #d9d9d9;
+}
+
+ul.amc-navbar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style: none;
+    margin-bottom: 0;
+}
+
+.nav-link {
+    display: block;
+    padding: 12px 40px;
+    color: #666666;
+    text-decoration: none;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
+    font-weight: 500;
+    font-family: "Roboto", serif;
+    font-size: 17px;
+    text-transform: capitalize;
+}
+
+
+section.mission-area {
+    margin: 75px 0 55px;
+}
+.mission-left {
+    padding-right: 20px;
+}
+
+.mission-heading h4 {
+    background-color: #ebe5e5;
+    padding: 7px 15px;
+    font-family: "Lexend Deca", serif;
+    font-size: 24px;
+    color: #232323;
+}
+
+p.mission-para {
+    padding-left: 3px;
+    padding-top: 12px;
+    font-size: 17px;
+    text-align: justify;
+    line-height: 34px;
+    color: #323232;
+    font-weight: 500;
+}
+
+.why-us-main {
+    /* padding-left: 16px; */
+    border: 1px solid #c2c2c2;
+    padding: 14px 17px;
+}
+
+.why-us-head h4 {
+    border-bottom: 2px solid #272727;
+    padding-bottom: 11px;
+    font-family: "Lexend Deca", serif;
+    font-size: 24px;
+}
+
+.why-us-para p {
+    padding-top: 12px;
+    color: #323232;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 28px;
+    text-align: justify;
+}
+
+ul.why-us-list li {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 26px;
+    padding-bottom: 12px;
+    color: #373737;
+}
+
+
+section.amc-product-main {
+    padding: 30px 0 30px;
+}
+
+.amc-pro-head h1 {
+    text-align: center;
+    color: #272727;
+    font-size: 34px;
+    font-family: "Lexend Deca", serif;
+    margin-bottom: 50px;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.amc-pro-head h1::before{
+    content: "";
+    position: absolute;
+    width: 142px;
+    height: 2px;
+    background-color: #000000;
+    bottom: 0;
+    right: 574px;
+}
+
+.product-image {
+    width: 100%;
+    height: 100%;
+    /* border: 3px solid #ffffff; */
+    -webkit-box-shadow: 10px 10px 22px -13px rgba(69,69,69,0.63);
+    -moz-box-shadow: 10px 10px 22px -13px rgba(69,69,69,0.63);
+    box-shadow: 1px 4px 17px 2px rgba(69,69,69,0.63);
+    /* border-radius: 37px; */
+    position: relative;
+    /* width: 350px; */
+    background: radial-gradient(#111 50%, #000 100%);
+    /* overflow: hidden; */
+    cursor: pointer;
+    height: 290px; 
+}
+
+.product-image img {
+    width: 100%;
+    height: 290px;
+    transform: scale(1.02);
+    transition: 0.3s ease-out;
+}
+
+.product-image:hover img{
+    transform: scale(1.01);
+	opacity: 0.2;
+}
+
+.pro-overlay {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 290px;
+    padding: 15px;
+    text-align: center;
+    color: #fff;
+}
+
+a.link-btn {
+    display: inline-block;
+    background: #336e9d;
+    color: #fff;
+    padding: 12px 25px;
+    border-radius: 4px;
+    transform: translateY(140px);
+    opacity: 0;
+    transition: all .3s ease-out 0.4s;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.pro-overlay .link-btn:hover {
+	background: rgb(92, 92, 92);
+}
+
+
+
+.product-image:hover .pro-overlay .link-btn {
+	opacity: 1;
+	transform: translateY(85px);
+}
+
+.product-content {
+    margin-bottom: 35px;
+}
+
+.product-content h4 {
+    font-size: 19px;
+    text-align: center;
+    padding: 25px 15px 15px;
+    font-weight: 400;
+    cursor: pointer;
+    color: #373737;
+    font-family: "Lexend Deca", serif;
+    letter-spacing: 0.5px;
+}
+
+.product-bg {
+    background: url(../images/AMC-slider-3.png) no-repeat;
+    background-size: cover;
+    height: 120px;
+    background-position-y: 95%;
+    position: relative;
+}
+
+.product-overlay {
+    background-color: rgba(0, 0, 0, 0.7);
+    height: 120px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.product-overlay h1 {
+    text-align: center;
+    color: #ffffff;
+    font-family: "Lexend Deca", serif;
+    font-size: 34px;
+    padding-top: 38px;
+    letter-spacing: 0.5px;
+}
+
+
+section.product-main {
+    margin-bottom: 40px;
+}
+
+
+div#accordionFlushExample {
+    border: 2px solid #ded8d8;
+}
+
+.accordion-flush .accordion-item .accordion-button {
+    border-radius: 0;
+    font-size: 18px;
+    color: #333333;
+    font-weight: 600;
+    padding: 21px 35px;
+}
+
+
+
+
+section.aboutus-main {
+    padding: 65px 0 45px;
+    background-color: #f3f3f3;
+}
+
+
+.about-head h1 {
+    color: #272727;
+    font-size: 32px;
+    font-family: "Lexend Deca", serif;
+    padding-bottom: 15px;
+    padding-left: 15px;
+}
+
+
+.aboutus-head h1::before {
+    content: "";
+    position: absolute;
+    width: 300px;
+    height: 2px;
+    background-color: #000000;
+    bottom: 0;
+    right: 496px;
+    /* padding-top: 2px; */
+    /* margin-top: -8px; */
+}
+
+.about-image img {
+    width: 100%;
+    height: auto;
+    padding-top: 90px;
+}
+
+.aboutus-para p {
+    font-size: 16px;
+    font-weight: 400;
+    color: #323232;
+    text-align: justify;
+    /* text-align: center; */
+    line-height: 36px;
+    padding: 0 25px;
+}
+
+span.\31 5-year {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+span.c-name {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.btn-area {
+    text-align: center;
+    margin-top: 40px;
+}
+
+button.readmore-btn {
+    background-color: #939090;
+    color: #fff;
+    outline: none;
+    border: none;
+    padding: 16px 40px;
+    border-radius: 6px;
+    font-size: 17px;
+    font-weight: 500;
+    font-family: "Roboto", serif;
+}
+
+
+
+section.gallery-main {
+    margin-bottom: 60px;
+}
+
+
+.gallery-bg {
+    background: url(../images/Amc-slider-2.png) no-repeat;
+    background-size: cover;
+    height: 120px;
+    background-position-y: 95%;
+    position: relative;
+}
+
+.gallery-overlay {
+    background-color: rgba(0,0,0,0.7);
+    height: 120px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.gallery-overlay h1 {
+    text-align: center;
+    color: #ffffff;
+    font-family: "Lexend Deca", serif;
+    font-size: 34px;
+    padding-top: 38px;
+    letter-spacing: 0.5px;
+}
+
+.gallery-main {
+    margin-bottom: 15px;
+}
+
+.gallery-image {
+    box-shadow: 2px 2px 10px 1px rgba(69, 69, 69, 0.63);
+}
+
+.gallery-image img {
+    width: 100%;
+    height: 260px;
+}
+
+.gallery-image img {
+    margin-left: -3px;
+    -webkit-transform: scale(1.5);
+    transform: scale(1.03);
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+    cursor: pointer;
+}
+
+.gallery-image:hover img{
+    margin-left: 0;
+}
+
+.short-contact {
+    background-color: #3a6f99;
+    padding: 25px 0;
+}
+
+
+/*-----client-portion-----*/
+
+
+section.client-area {
+    margin-bottom: 45px;
+    margin-top: 60px;
+}
+
+.client-head h1{
+    color: #272727;
+    font-size: 32px;
+    font-family: "Lexend Deca", serif;
+    padding-bottom: 15px;
+    padding-left: 15px;
+    text-align: center;
+    position: relative;
+}
+
+.client-head h1::before {
+    content: "";
+    position: absolute;
+    width: 200px;
+    height: 2px;
+    background-color: #000000;
+    bottom: 0;
+    right: 540px;
+}
+
+.client-list {
+    padding-top: 50px;
+}
+
+
+.client-image img {
+    padding: 30px;
+}
+
+
+/*----contact-portion----*/
+
+.contact-bg {
+    background: url(../images/polymer-powder.jpg) no-repeat;
+    background-size: 100% 100%;
+    height: 570px;
+    position: relative;
+    background-attachment: fixed;
+}
+
+.contact-overlay {
+    background-color: rgb(47 47 47 / 78%);
+    height: 570px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.contact-head h1 {
+    text-align: center;
+    color: #ffffff;
+    font-size: 34px;
+    font-family: "Lexend Deca", serif;
+    margin-bottom: 50px;
+    position: relative;
+    padding-bottom: 10px;
+    padding-top: 35px;
+}
+
+.contact-head h1::before {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 2px;
+    background-color: #d1d1d1;
+    bottom: 0;
+    right: 596px;
+}
+
+
+
+.contact-list {
+    background-color: #ffffff;
+    height: 360px;
+    border-radius: 11px;
+    padding: 35px 50px;
+    box-shadow: 1px 1px 9px 0px rgb(255 255 255 / 71%);
+}
+
+.contact-part {
+    display: flex;
+    padding-bottom: 25px;
+}
+
+.contact-ico {
+    width: 50px;
+    height: 50px;
+    background-color: #272727;
+    border-radius: 100%;
+    text-align: center;
+    line-height: 52px;
+}
+
+.contact-ico i {
+    color: #fff;
+    font-size: 20px;
+}
+
+.contact-content {
+    padding-left: 22px;
+}
+
+.contact-content h4 {
+    color: #272727;
+    font-size: 19px;
+    font-family: "Lexend Deca", serif;
+    margin-bottom: 10px;
+}
+
+.contact-content p {
+    color: #646464;
+    font-weight: 500;
+    line-height: 26px;
+}
+
+/*------service----*/
+
+
+section.service-area {
+    margin-bottom: 35px;
+}
+
+
+ul.service-list {
+    /* border: 1px solid #000; */
+    list-style: none;
+    /* text-align: center; */
+}
+
+ul.service-list li {
+    padding: 10px 13px;
+    /* background-color: #e6e6e6; */
+    margin-bottom: 5px;
+    font-size: 19px;
+    font-weight: 500;
+    color: #272727;
+    cursor: pointer;
+}
+
+ul.service-list li:nth-child(2n) {
+    background-color: #d3d3d3;
+}
+
+i.fa-solid.fa-angle-right.service-ico {
+    font-size: 18px;
+    padding-right: 15px;
+}
+
+
+/*----testimonial-section-----*/
+
+
+
+
+.testimonial-area {
+    background: url(../images/Amc-slider-2.png) no-repeat;
+    background-size: cover;
+    height: 480px;
+    position: relative;
+    /* background-attachment: fixed; */
+}
+
+.testimonial-overlay {
+    background-color: rgba(255,255,255,0.7);
+    position: absolute;
+    height: 480px;
+    left: 0;
+    top: 0;
+    width: 100%;
+}
+
+
+
+.footer-main {
+    background-color: #2a5a81;
+    padding: 25px 15px 10px;
+    height: 180px;
+    position: relative;
+}
+
+.footer-bg {
+    background: url(../images/oil-refine-plantvector.png) no-repeat;
+    height: 180px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* background-size: cover; */
+    width: 100%;
+    background-position: 249px 10px;
+}
+
+.footer-top-link {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 50px 0 25px;
+}
+
+.footer-top-social a {
+    color: #fff;
+    padding-left: 15px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+ul.link-list {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+ul.link-list li {
+    padding: 0 25px;
+    border-right: 3px solid #fff;
+    color: #fff;
+    font-size: 17px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+ul.link-list li:nth-child(6) {
+    border-right: none;
+}
+
+.footer-top-social {
+    padding-right: 35px;
+}
+
+.amc-copyright {
+    border-top: 2px solid #a39e9e;
+    padding: 25px 15px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.amc-copyright p {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+}
